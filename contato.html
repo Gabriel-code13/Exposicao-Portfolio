@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/android-chrome-192x192.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <title>Global Code Zone</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo"><a href="#">Global Code Zone</a></div>
+    
+        <div class="icon-menu"><i class="fas fa-bars"></i></div>
+    
+        <div id="menu" class="menu">
+    
+            <a href="index.html">Home</a>
+    
+            <br />
+    
+            <a href="contato.html">Contato</a>
+    
+        </div><!--menu-->
+    </header>
+
+    <form action="https://api.staticforms.xyz/submit" class="contato" method="post">
+        <input type="hidden" name="accessKey" value="39f8fdc3-7a65-4e99-85e5-d90f77e9e766">
+
+        <h1>Preencha as informações abaixo.</h1>
+
+
+        <div class="nome">
+            <label for="nome">Primeiro Nome:</label>
+            <input type='text' name='name' id='nome' placeholder="Seu nome..." />
+        </div>
+
+        <br/>
+        <br/>
+
+        <div class="mail">
+            <label for="email">Endereço de E-mail</E-mail></label>
+            <input type='email' name="email" id='email' placeholder="Seu E-mail..." />
+        </div>
+
+        <br/>
+        <br/>
+
+        <div class="textArea">
+            <label for="textAreaMensagem">Mensagem:</label>
+            <textarea name="message" id="textAreaMensagem" cols="30" rows="5"></textarea>
+        </div>
+
+        <div class="botao">
+            <button>Enviar</button>
+        </div>
+    </form>
+
+    <script src="js/all.min.js"></script>
+
+    <script>
+        var iconMenu = document.querySelectorAll('.icon-menu');
+    
+        iconMenu[0].addEventListener('click',()=>{
+            let menu = document.getElementById('menu');
+            if(menu.classList.contains('hide')){
+                menu.classList.add('show');
+                menu.classList.remove('hide');
+            }else{
+                menu.classList.add('hide');
+                menu.classList.remove('show');
+            }
+        })
+    </script>
+
+</body>
+</html>

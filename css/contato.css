@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 20px;
+}
+
+/*a baixo, menu*/
+
+header {
+    background-color: #4f5d80;
+    padding: 10px;
+    display: flex;
+    height: 45px;
+}
+
+.logo {
+    color: white;
+    font-size: 20px;
+    width: 50%;
+}
+
+.menu {
+    position: absolute;
+    left: 0;
+    top: 45px;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    background-color: #262e42;
+    text-align: center;
+    opacity: 0;
+}
+
+.hide {
+    transition: 1s;
+    opacity: 0;
+}
+
+.show{
+    transition: 1s;
+    opacity: 1;
+}
+
+.menu a{
+    display: inline-block;
+    padding: 10px 0;
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+}
+
+.menu a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.logo a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.logo a:hover{
+    text-decoration: underline;
+}
+
+.icon-menu{
+    width: 50%;
+    text-align: right;
+}
+
+.icon-menu svg{
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+/*acima, menu*/
+
+form{
+    text-align: center;
+    margin-top: 5%;
+    border: 3px solid #000;
+    border-radius: 10px;
+    max-width: 30%;
+    margin-left: 37%;
+    margin-top: 15%;
+}
+
+.nome{
+    padding-top: 10px;
+}
+
+.nome > input {
+    color: blue;
+}
+
+.mail > input{
+    color: blue;
+}
+
+.textArea{
+    padding-bottom: 3px;
+}
+
+.botao{
+    padding: 10px;
+}
+
+textarea {
+    resize: none;
+}
+
+form > h1{
+    padding: 10px;
+}
